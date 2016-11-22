@@ -5,13 +5,13 @@ import android.graphics.Canvas;
 /**
  * Created by vv on 22.11.2016.
  */
-public class Circle extends Figure{
+public class Circle extends Figure implements Drawable{
     public Circle(float posX, float posY) {
         super(posX, posY);
     }
 
     @Override
-    void draw(Canvas canvas) {
+    public void draw(Canvas canvas) {
         canvas.drawCircle(pos.x, pos.y, 100, paint);
     }
 }
